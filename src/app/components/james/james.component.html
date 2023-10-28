@@ -1,0 +1,26 @@
+<h1>Infografía james</h1>
+<div *ngFor="let valor of  futbolistas first as isfirst ">
+  <div *ngIf="isfirst">
+    <div class="card">
+      <img [src]="valor.img" class="card-img-top" [alt]="valor.nombre">
+      <div class="card-body">
+        <div class="mb-3">
+          <button type="button" class="btn btn-primary" (click)="toggleInfo()">Ver mas...</button>
+        </div>
+        <div class="mb-3" *ngIf="showInfo">
+          <h5 class="card-title">nombre: {{valor.nombre}}</h5>
+          <p class="card-text">bio:{{valor.bio}}</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-mmuted">img:{{valor.img}}</small><br>
+          <small class="text-mmuted">nacimiento:{{valor.nacimiento}}</small><br>
+          <small class="text-mmuted">seleccion:{{valor.seleccion}}</small><br>
+          <small class="text-mmuted">equipo:{{valor.equipo}}</small>
+          <div class="conte">
+            <a [routerLink]="['../home']" class="btn btn-dark">Home </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<h1>Infografía ronaldo</h1>
+<div *ngFor="let valor of  futbolistas odd as isOdd ">
+    <div *ngIf="isOdd"> 
+    <div class="card">            
+      <img [src]="valor.img" class="card-img-top" [alt]="valor.nombre">
+      <div class="card-body">
+        <h5 class="card-title">{{valor.nombre}}</h5>
+        <p class="card-text">{{valor.bio}}</p>      
+      </div>
+      <div class="card-footer">
+        <small class="text-mmuted">{{valor.img}}</small><br>
+        <small class="text-mmuted">{{valor.nacimiento}}</small><br>
+        <small class="text-mmuted">{{valor.seleccion}}</small><br>
+        <small class="text-mmuted">{{valor.equipo}}</small>
+        <div class="conte">
+          <a [routerLink]="['../home']" class="btn btn-dark">Home </a> 
+          </div>
+      </div>
+    </div>
+</div>
+</div>

@@ -1,0 +1,13 @@
+.card-img-top {
+    width: 20%; /* Ajusta el tamaño deseado, por ejemplo, el 50% del contenedor padre */
+    height: 20%; 
+    display: block;
+    margin: 0 auto;
+    ;
+}
+h1{
+    text-align: center;
+}
+.conte{
+    float:right;
+}

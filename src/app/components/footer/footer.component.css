@@ -1,0 +1,9 @@
+.color {
+    background: rgba(77, 146, 77, 0.822);
+    color: white;
+    text-align: center;
+    padding: 5px;
+   
+    bottom: 0;
+    width: 100%;
+  }
